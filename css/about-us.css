@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.hero {
+    padding: 150px;
+    background-color: green;
+}
+
+.hero-header {
+    font-size: 75px;
+    color: #fff;
+}
+
+.hero-subheader {
+    font-size: 25px;
+    color: #eee;
+}
+
+.about-us {
+    padding: 150px 0;
+}
+
+.about-us-image {
+    max-width: 100%;
+}
+
+.about-us-content {
+    font-size: 20px;
+    text-align: left;
+}
+
+footer {
+    padding: 0;
+    background-color: #325987;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}

@@ -1,0 +1,118 @@
+header {
+  background-color: #F0F8FF;
+  background-image: url("../img/dogs-pattern.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 140px 0 100px;
+}
+>
+@media (min-width: 576px) {
+  header {
+    padding: 200px 0;
+  }
+}
+
+
+
+@media (min-width: 576px) {
+  .section {
+    padding: 100px 0;
+  }
+}
+
+@media (min-width: 576){
+h1{
+    color: #000000;
+    font-size: 36px;
+   }
+}
+li {
+    margin-bottom: 8px;
+}
+.first-section ul{
+    background-color: #F7F9FC;
+    margin-top: 25px;
+    padding: 30px 55px;
+    border-radius: 8px;
+}
+header{
+    background-color: #F0F8FF;
+    padding: 200px 0;
+    background-image: url("../img/th.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.first-section{
+    background-color: white;
+}
+.section{
+    padding: 60px 0 40px;
+}
+.first-section img {
+  margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .first-section img {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .first-section img {
+    margin-bottom: 0;
+  }
+}
+.second-section {
+  background-color: #FBFBFB;
+}
+
+.second-section p {
+  color: #9DA2A6;
+}
+
+.second-section img {
+  height: 75px;
+  margin: 25px 0 10px;
+  width: 75px;
+}
+.nav-item{
+    margin: 10px 16px;
+}
+.navbar-brand img {1
+ height: 46px;
+ margin-right: 8px;
+ width: 46px;
+}
+third-section {
+  background-color: white;
+}
+.third-section img {
+  margin-top: 35px;
+}
+@media (min-width: 768px) {
+  .third-section img {
+    margin-top: 0;
+  }
+}
+.fourth-section  {
+  background-color: #F0F8FF;
+  background-image: url("../img/dogs-pattern.png");
+  background-repeat: repeat;
+  background-size: 192px 192px ;
+  
+
+}
+footer {
+  background-color: white;
+  padding: 35px ;
+}
+
+.footer-logo {
+  height: 22px;
+  margin-bottom: 3px;
+  width: 22px;
+}

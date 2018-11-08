@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>MENU HORIZONTAL</title>
+ 
+ <meta charset="UTF-8">
+ 
+ <style>
+
+*{
+margin:0;
+padding:0;
+    }
+
+.links{
+ width:100%;
+ height:50px;
+position:fixed;
+display:flex;
+    }
+
+.links label{
+padding:10px 0;
+flex-grow:1;
+cursor:pointer;
+transition::all .4s;
+text-align:center;
+font-family:'Lobster',cursive; src:url("_fontes/Lobster-Regular.ttf");
+font-size:100%;
+color:#fff;
+
+      }
+
+.links label:hover{ /*menus ficam acessíveis*/
+background-color: rgba(255,255,255,.2);
+      }
+
+.scroll input{ /*radio button some*/
+ display:none;
+       }
+
+.bloco{ /* barar de rolagem scroll*/
+ width:100vw;
+ height:100vh;
+ justify-content:center;
+ align-items:center;
+ display:flex;
+        }
+
+.bloco img{ /*tamanho da img*/
+width:40%;
+
+       }
+#nodejs{ /*faz parte do bloco*/
+  background-color: #81F79F;
+      }
+
+
+#bootstrap{
+background-color:#69f;
+     }
+
+#sass{
+background-color:#faa;
+}
+
+#ruby{
+background-color:#aaa; 
+}
+
+#angular{
+background-color:#414950;
+}
+
+.scroll{
+display:flex;
+width:100vw;
+height:100vh;
+overflow:hidden;
+}
+
+.sections{
+ transition:all .4s;
+}
+
+#rd_bootstrap:checked ~ .sections{
+ margin-top:-100vh;
+}
+#rd_sass:checked ~ .sections{
+ margin-top:-200vh;
+}
+/*#rd_ruby:checked ~ .sections{
+ margin-top:-300vh;
+}
+/*#rd_angular:checked ~ .sections{*
+  margin-top:-400vh;
+}*/
+a:link {
+   color: red;
+}
+
+/* link que foi visitado */
+a:visited {
+    color: white;
+}
+
+/* mouse over */
+a:hover {
+    color: #000000;
+}
+
+/* link selecionado */
+a:active {
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="links">
+      <label for="rd_nodejs">Home</label><!-- para que cada vez que clicar na label já marcar na caixa opção -->
+      <label for="rd_bootstrap">Produtos</label>
+      <label for="rd_sass">Sobre</label>
+      <label for="rd_ruby"><a href=form.html>Contato</a></label>
+      <label for="rd_angular"><a href=http://localhost:8080/index.php>Login</a></label>
+
+</nav>
+
+<div class="scroll">
+ <input type="radio" name="grupo" id="rd_nodejs" checked="true">
+ <input type="radio" name="grupo" id="rd_bootstrap">
+ <input type="radio" name="grupo" id="rd_sass">
+ <input type="radio" name="grupo" id="rd_ruby">
+ <input type="radio" name="grupo" id="rd_angular">
+
+<section class="sections">
+         <section class="bloco" id="nodejs"><img src="logo1.png"></section>
+         <section class="bloco" id="bootstrap"><img src="_imagens/bootstrap.png"></section>
+         <section class="bloco" id="sass"><img src="_imagens/sass.png"></section>
+         <section class="bloco" id="ruby"><img src="_imagens/ruby.png">
+
+
+         </section>
+         <section class="bloco" id="angular"><img src="_imagens/angular.png"></section>
+
+</section>
+
+</div>
+
+</body>
+</html>﻿
